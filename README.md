@@ -1,12 +1,12 @@
-# ReFRAME Diversity Reduction Workflow
+# Diversity Reduction Workflow
 
-Select a diverse subset of standardized ReFRAME compounds for docking workflows.
+Select a diverse subset of standardised ReFRAME compounds for docking workflows.
 
-The main workflow is implemented in `ReFRAME_Clustering_Notebook.ipynb`. It is designed to run after the molecule standardization notebook has produced a clean `reframe_std.csv` file.
+The main workflow is implemented in `k-Means_Clustering_Notebook.ipynb`. It is designed to run after the molecule standardisation notebook has produced a clean `reframe_std.csv` file.
 
 ## What the Notebook Does
 
-1. Loads standardized ReFRAME molecules.
+1. Loads standardised ReFRAME molecules.
 2. Calculates physicochemical descriptors:
    - molecular weight
    - LogP
@@ -44,12 +44,12 @@ conda install -c conda-forge rdkit pandas numpy scikit-learn tqdm matplotlib sea
 
 ## Input Data
 
-The notebook expects a standardized CSV with a `std_smiles` column.
+The notebook expects a standardised CSV with a `std_smiles` column.
 
 The default input is:
 
 ```python
-INPUT_CSV = "skc_outputs/reframe_std.csv"
+INPUT_CSV = "skc_outputs/reframe_std.csv" # change path 
 ```
 
 An example standardized file, `reframe_std.csv`, is included in this folder. If you keep the notebook default path, place that file at:
@@ -126,7 +126,7 @@ Expected outputs include:
 - `top_scaffolds.png`: top Bemis-Murcko scaffold frequency plot
 - `cluster_size_distribution.png`: k-means cluster size plot
 
-The notebook also creates a t-SNE cluster visualization. In the current notebook, that image is saved as `tsne_clusters.png` in the working directory.
+The notebook also creates a t-SNE cluster visualisation. In the current notebook, that image is saved as `tsne_clusters.png` in the working directory.
 
 ## Notes
 
