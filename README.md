@@ -1,4 +1,4 @@
-# Diversity Reduction Workflow
+# Diversity Reduction Workflow using k-means
 
 Select a diverse subset of standardised ReFRAME compounds for docking workflows.
 
